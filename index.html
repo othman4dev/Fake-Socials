@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" id="script"></script>
+    <title>Welcome to Fake-Socials</title>
+    <script src="snippets/scripts/whatsapp.js" type="text/javascript"></script>
+    <script src="snippets/scripts/instagram.js" type="text/javascript"></script>
+</head>
+<body>
+    <header id="header">
+        <h1>Use our service to create fake conversations or fake posts.</h1>
+        <h3>multiple platforms are supported.</h3>
+        <div class="socials">
+            <img src="assets/whatsapp.png" alt="">
+            <img src="assets/facebook.png" alt="">
+            <img src="assets/instagram.png" alt="">
+            <img src="assets/tiktok.png" alt="">
+            <img src="assets/twitter.png" alt="">
+            <img src="assets/youtube.png" alt="">
+        </div>
+    </header>
+    <main id="main">
+        <div class="intro" id="intro">
+            <h3 style="z-index: 99;">Why do we exist?</h3>
+            <p>Sometimes it's just fun to create fake conversations with celebrities
+                for memes or to show to friends. However, This might sometimes be dangerous,
+                because it can affect certain people and be used by the wrong people to scam
+                others. So we really advise you to use carefully and keep us around by 
+                agreeing to the terms and conditions of use.
+            </p>
+            <div class="wrapper" id="terms">
+                <label>
+                    <input type="checkbox" value="agreed" id="box" onclick="reduce()"> I agree to <a href="terms.html">The Terms And Conditions Of Use.</a>
+                </label>
+            </div>
+        </div>
+        <div class="choose" onmouseover="blurAll()" id="choose">
+            <h3>Choose a platform: WhatsApp chat and Instagram chat only supported till the moment.</h3>
+            <div class="choices">
+                <button onmouseover="whatsapp()" onmouseout="noList1()" id="top1"><img src="assets/whatsapp.png" alt=""><img src="assets/carret.png" alt="" class="carret" id="carret1"></button>
+                <button onmouseover="facebook()" onmouseout="noList6()" id="top2"><img src="assets/facebook.png" alt=""><img src="assets/carret.png" alt="" class="carret"id="carret2"></button>
+                <button onmouseover="instagram()" onmouseout="noList2()" id="top3"><img src="assets/instagram.png" alt=""><img src="assets/carret.png" alt="" class="carret"id="carret3"></button>
+                <button onmouseover="twitter()" onmouseout="noList4()" id="top4"><img src="assets/twitter.png" alt=""><img src="assets/carret.png" alt="" class="carret"id="carret4"></button>
+                <button onmouseover="tiktok()" onmouseout="noList3()" id="top5"><img src="assets/tiktok.png" alt=""><img src="assets/carret.png" alt="" class="carret"id="carret5"></button>
+                <button onmouseover="youtube()" onmouseout="noList5()" id="top6"><img src="assets/youtube.png" alt=""><img src="assets/carret.png" alt="" class="carret"id="carret6"></button>
+            </div>
+            <div class="hidden">
+                <div class="list" id="whatsappList" onmouseover="whatsapp()" onmouseout="noList1()">
+                    <button onclick="loadSnippet('whatsapp')">Chat</button>
+                    <button disabled>Dashboard</button>
+                </div>
+                <div class="list" id="facebookList" onmouseover="facebook()" onmouseout="noList6()">
+                    <button disabled>Post</button>
+                    <button disabled>Chat</button>
+                    <button disabled>Comment</button>
+                </div>
+                <div class="list" id="instagramList" onmouseover="instagram()" onmouseout="noList2()">
+                    <button disabled>Post</button>
+                    <button onclick="loadSnippet('instagram')">Chat</button>
+                    <button disabled>Comment</button>
+                </div>
+                <div class="list" id="twitterList" onmouseover="twitter()" onmouseout="noList4()">
+                    <button disabled>Post</button>
+                    <button disabled>Chat</button>
+                    <button disabled>Comment</button>
+                </div>
+                <div class="list" id="tiktokList" onmouseover="tiktok()" onmouseout="noList3()">
+                    <button disabled>Post</button>
+                    <button disabled>Chat</button>
+                    <button disabled>Comment</button>
+                </div>
+                <div class="list" id="youtubeList" onmouseover="youtube()" onmouseout="noList5()">
+                    <button disabled>Post</button>
+                    <button disabled>Chat</button>
+                    <button disabled>Comment</button>
+                </div>
+            </div>
+        </div>
+        <div class="engine" id="engine" style="padding-bottom: 40px;">
+            <div style="border: dashed black 3px;width: 100%; flex-wrap: wrap;display: flex;height: 350px;margin-top: 90px;align-items: center;justify-content: center;flex-direction: column;gap: 20px ;">
+                <h2 style="text-align: center;width: 100%;">Select a platform first.</h2>
+                <img src="assets/notallowed.png" alt="" style="border-radius:50%;background-color: black; width: 60px;height: 60px;box-shadow: black 0 0 0 5px;">
+            </div>
+            <div class="selector" id="selector">
+                <h2 style="display: flex;align-items: center;justify-content: center;" >WhatsApp <img src="assets/carret.png" alt="" style="width: 40px; transform: rotate(-90deg);"></h2>
+                <form class="generalForm" method="dialog">
+                    <label for="" style="max-height: 40px;font-size: 11px;flex-grow: 1;"><button style="border: none;flex-grow: 1;" onclick="insertContact()">Add a contact</button>&nbsp;</label>
+                    <label for="" style="max-height: 40px;font-size: 11px;flex-grow: 1;"><button style="border: none;" onclick="randomizeNames()" >Randomize contacts names</button>&nbsp;</label>
+                    <label for="" style="max-height: 40px;font-size: 11px;flex-grow: 1;"><h3 style="border: white solid 2px;border-radius: 50%;width: 30px;height: 30px;display: flex;align-items: center;justify-content: center; margin-right: 10px;">i</h3>All Info and Images are editable in the form &nbsp;&nbsp;</label>
+                    <label for="" style="max-height: 40px;font-size: 11px;flex-grow: 1;"><h3 style="border: white solid 2px;border-radius: 50%;width: 30px;height: 30px;display: flex;align-items: center;justify-content: center; margin-right: 10px;">i</h3>Double Click On Any Contact To Delete It &nbsp;&nbsp;</label>
+                </form>
+                <div style="opacity:0;position:absolute;z-index:-99999;"><input type="time" id="timerBox" value="${timer}"></div>
+                <img src="assets/phone/whatsapp/defaultprofile.png" style="opacity:0;position:absolute;z-index:-99999;" id="special">
+            </div>
+            </div>
+            <div class="result">
+                <h2 class="display-title">
+                    Results
+                </h2>
+                <div class="phone" id="phone" style="background-color: #161d26;">
+                    <div class="phone-top-bar" style="background-color: #212b37;">
+                        <img src="assets/phone/battery.png" alt="" style="width: 25px;margin-bottom: -5px;">
+                        <p id="timeStart" contenteditable="true" spellcheck="false">9:41</p>
+                        <img src="assets/phone/wifi.png" alt="" style="width: 18px;margin-bottom: -2px;margin-top: 19px;margin-right: 5px;">
+                        <img src="assets/phone/signal.png" alt="" style="width: 18px;margin-top: 19px;margin-right: 5px;">
+                        <div class="phone-notch"></div>
+                    </div>
+                    <div class="whatsapp-map" id="whatsapp-map">
+                        <div class="whatsapp-header" style="height: 60px;background-color: #212b37;">
+                            <h3 style="color: grey;margin-left: 15px;margin-right: 180px;">WhatsApp</h3>
+                            <img src="assets/phone/whatsapp/camera4.png" alt="" style="float: right;width: 25px;">
+                            <img src="assets/phone/whatsapp/search2.png" alt="" style="float: right;margin-left: 15px;width: 25px;">
+                            <img src="assets/phone/whatsapp/3dots2.png" alt="" style="float: right;margin-left: 10px;width: 25px;">
+                        </div>
+                        <div style="background-color: #212b37;height: 40px;display: flex;align-items: center;">
+                            <img src="assets/phone/whatsapp/group.png" style="width: 25px;height: 25px;margin-left: 7px;" alt="">
+                            <button style="background-color: transparent;margin-left: 10px;border: none;border-bottom: solid ;width: 100px;display: flex;height: 40px;display: flex;align-items: center;justify-content: center;gap: 8px;color: #009568;font-family: Verdana, Geneva, Tahoma, sans-serif;font-weight: 500;">
+                                Chats 
+                                <div style="background-color: #009568;border-radius: 50%;width: 20px;height: 20px;color: #273443;display: flex;align-items: center;justify-content: center;" contenteditable="true" spellcheck="false">1</div>
+                            </button>
+                            <button style="background-color: transparent;margin-left: 10px;border: none;width: 100px;display: flex;height: 40px;display: flex;align-items: center;justify-content: center;gap: 8px;color: grey;font-family: Verdana, Geneva, Tahoma, sans-serif;font-weight: 500;">
+                                Updates
+                                <div style="background-color: grey;border-radius: 50%;width: 5px;height: 5px;color: #273443;display: flex;align-items: center;justify-content: center;"></div>
+                            </button>
+                            <button style="background-color: transparent;margin-left: 10px;border: none;width: 100px;display: flex;height: 40px;display: flex;align-items: center;justify-content: center;gap: 8px;color: grey;font-family: Verdana, Geneva, Tahoma, sans-serif;font-weight: 500;">
+                                Calls 
+                            </button>
+                        </div>
+                    </div>
+                    <div class="messanger" style="margin-top: 5px;">
+                        <div class="user" style="width: 99%;height: 60px;margin-top: 0px;display: flex;align-items: center;position: relative;">
+                            <input type="file" style="display: none;" accept=".jpg,.png,.gif,.jpeg,.webp" id="inputUserPP" onchange="inputIsOn(this)" class="user1">
+                            <label for="inputUserPP" style="margin-left: 15px;margin-top: 10px;"><img src="assets/phone/whatsapp/defaultprofile.png" alt="" class="user1" style="border-radius: 50%;width: 45px;height: 45px;"></label>
+                            <div style="display: flex;flex-direction: column;width: 200px;text-align: left;height: 50px;align-items: left;">
+                                <h4 style="height: fit-content;font-weight: 500;font-family: Verdana, Geneva, Tahoma, sans-serif;color: white;margin-left: 20px;margin-top: 8px;" contenteditable="true" spellcheck="false">Name</h4>
+                                <p style="position: absolute;font-size:11px;right: 20px;top: 10%;color: grey;" contenteditable="true" spellcheck="false">11:09 PM</p>
+                                <p style="font-size: 11px;margin-top: -15px;margin-left: 20px;color: grey;font-family: Verdana, Geneva, Tahoma, sans-serif;" contenteditable="true" spellcheck="false">Hi</p>
+                            </div>
+                        </div>
+                        <div class="user" style="width: 99%;height: 60px;margin-top: 0px;display: flex;align-items: center;position: relative;">
+                            <input type="file" style="display: none;" accept=".jpg,.png,.gif,.jpeg,.webp" id="inputUserPP2" onchange="inputIsOn(this)" class="user2">
+                            <label for="inputUserPP2" style="margin-left: 15px;margin-top: 10px;"><img src="assets/phone/whatsapp/defaultprofile.png" alt="" class="user2" style="border-radius: 50%;width: 45px;height: 45px;"></label>
+                            <div style="display: flex;flex-direction: column;width: 200px;text-align: left;height: 50px;align-items: left;">
+                                <h4 style="height: fit-content;font-weight: 500;font-family: Verdana, Geneva, Tahoma, sans-serif;color: white;margin-left: 20px;margin-top: 8px;" contenteditable="true" spellcheck="false">Name</h4>
+                                <p style="position: absolute;font-size:11px;right: 20px;top: 10%;color: grey;" contenteditable="true" spellcheck="false">11:09 PM</p>
+                                <p style="font-size: 11px;margin-top: -15px;margin-left: 20px;color: grey;font-family: Verdana, Geneva, Tahoma, sans-serif;" contenteditable="true" spellcheck="false">Hi</p>
+                            </div>
+                        </div>
+                        <div class="user" style="width: 99%;height: 60px;margin-top: 0px;display: flex;align-items: center;position: relative;">
+                            <input type="file" style="display: none;" accept=".jpg,.png,.gif,.jpeg,.webp" id="inputUserPP3" onchange="inputIsOn(this)" class="user3">
+                            <label for="inputUserPP3" style="margin-left: 15px;margin-top: 10px;"><img src="assets/phone/whatsapp/defaultprofile.png" alt="" class="user3" style="border-radius: 50%;width: 45px;height: 45px;"></label>
+                            <div style="display: flex;flex-direction: column;width: 200px;text-align: left;height: 50px;align-items: left;">
+                                <h4 style="height: fit-content;font-weight: 500;font-family: Verdana, Geneva, Tahoma, sans-serif;color: white;margin-left: 20px;margin-top: 8px;" contenteditable="true" spellcheck="false">Name</h4>
+                                <p style="position: absolute;font-size:11px;right: 20px;top: 10%;color: grey;" contenteditable="true" spellcheck="false">11:09 PM</p>
+                                <p style="font-size: 11px;margin-top: -15px;margin-left: 20px;color: grey;font-family: Verdana, Geneva, Tahoma, sans-serif;" contenteditable="true" spellcheck="false">Hi</p>
+                            </div>
+                        </div>
+                        <div class="user" style="width: 99%;height: 60px;margin-top: 0px;display: flex;align-items: center;position: relative;">
+                            <input type="file" style="display: none;" accept=".jpg,.png,.gif,.jpeg,.webp" id="inputUserPP4" onchange="inputIsOn(this)" class="user4">
+                            <label for="inputUserPP4" style="margin-left: 15px;margin-top: 10px;"><img src="assets/phone/whatsapp/defaultprofile.png" alt="" class="user4" style="border-radius: 50%;width: 45px;height: 45px;"></label>
+                            <div style="display: flex;flex-direction: column;width: 200px;text-align: left;height: 50px;align-items: left;">
+                                <h4 style="height: fit-content;font-weight: 500;font-family: Verdana, Geneva, Tahoma, sans-serif;color: white;margin-left: 20px;margin-top: 8px;" contenteditable="true" spellcheck="false">Name</h4>
+                                <p style="position: absolute;font-size:11px;right: 20px;top: 10%;color: grey;" contenteditable="true" spellcheck="false">11:09 PM</p>
+                                <p style="font-size: 11px;margin-top: -15px;margin-left: 20px;color: grey;font-family: Verdana, Geneva, Tahoma, sans-serif;" contenteditable="true" spellcheck="false">Hi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="position: absolute;background-color: #009568;width: 50px;height: 50px;border-radius: 9pt;right: 25px;bottom: 25px;display: flex;align-items: center;justify-content: center;">
+                        <img src="assets/phone/whatsapp/discussion.png" style="height: 35px;width: 28px;" alt="">
+                    </div>
+                    <div class="phone-bottom-bar">
+                        <div class="black-bar"></div>
+                    </div>
+                </div>
+                <div class="phone-content">
+                    <div id="inserter" style="opacity: 0;position: absolute;z-index: -9999999;"></div>
+                </div>
+                <dialog open class="tips" id="tips">
+                    <button id="closer" onclick="formatDialog()">X</button>
+                    <p>This website is under continuos development ,which mean bugs might be found.
+                        .Please keep the instruction in mind to avoid bugs.
+                    </p>
+                    <p>If you find any bugs contact us to fix it.</p>
+                    <p>The website work with loads of javaScript code ,it might go slow if you are using a phone device</p>
+                    <p>If you go back and forward in the info selector menu and change the basic info ,already sent messages will not get the changes</p>
+                    <p>You can't delete a message once sent .We are working to enable this feature soon.</p>
+                    <p>We always recommend taking a screenshot with your device.</p>
+                </dialog>
+            </div>
+        </div>
+        <audio src="" id="hiddenAudio" style="display: none;"></audio>
+    </main>
+    <footer>
+        <div class="rate" id="rateform">
+            <p class="rating" id="rating" >Rate our service :</p>
+            <input type="radio" id="star5" name="rate" value="5" onmouseover="mouseOverEx()" onmouseout="mouseOut()" onclick="rateExcellent()" />
+            <label for="star5" title="text" class="star">5 stars</label>
+            <input type="radio" id="star4" name="rate" value="4" onmouseover="mouseOverGood()" onmouseout="mouseOut()" onclick="rateGood()"/>
+            <label for="star4" title="text"  class="star">4 stars</label>
+            <input type="radio" id="star3" name="rate" value="3" onmouseover="mouseOverOr()" onmouseout="mouseOut()" onclick="rateOrdinary()"/>
+            <label for="star3" title="text"  class="star">3 stars</label>
+            <input type="radio" id="star2" name="rate" value="2" onmouseover="mouseOverBad()" onmouseout="mouseOut()" onclick="rateBad()"/>
+            <label for="star2" title="text" class="star">2 stars</label>
+            <input type="radio" id="star1" name="rate" value="1" onmouseover="mouseOverVBad()" onmouseout="mouseOut()" onclick="rateVeryBad()" />
+            <label for="star1" title="text" class="star">1 star</label>
+            <br>
+            <button onclick="showThanks()" id="subm">Submit</button>
+        </div>
+        <div class="aboutMe">
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<div class="selector" id="selector">
+    <h2 style="display: flex;align-items: center;justify-content: center;" >WhatsApp <img src="assets/carret.png" alt="" style="width: 40px; transform: rotate(-90deg);"></h2>
+    <div class="panel" id="panel">
+    <form action="" class="form" method="dialog" id="format" class="formation">
+        <div id="tv1">
+            <h3 id="nameOfOutsider" class="tagName">Messages In</h3>
+            <p id="firstMessage">> _</p>
+        </div>
+        <label for="sender">
+            <input type="text" id="sender" placeholder="Enter message to receive">
+            <button type="submit" onclick="outsiderMessage()" class="submtBTN">
+                Receive
+            </button>
+        </label>
+        <label for="imagePort2" style="border: none;background-color: transparent;" class="labels">
+            <img src="assets/camera.png" alt="" class="sfx">
+            <img src="assets/notallowed.png" alt=" " id="imagePlayer" >
+        </label>
+        <input type="file" id="imagePort2" class="hiddenForms" accept=".png,.jpg,.jpeg,.gif,.webp,.svg,.bmp" onchange="appendPic1()">
+        <label for="audioPort2" style="border: none; background-color: transparent;" class="labels">
+            <img src="assets/phone/whatsapp/micro.png" alt="" class="sfx">
+        </label>
+        <input type="file" id="audioPort2" class="hiddenForms" accept=".mp3,.m4a,.aac" onchange="loadAudioFile2(this)">
+    </form>
+    <!---->
+    <form action="" class="form" method="dialog" id="format2" class="formation">
+        <div id="tv2">
+            <h3 id="nameOfInsider" class="tagName">Messages Out</h3>
+            <p id="firstMessage2">> _</p>
+        </div>
+        <label for="you">
+            <input type="text" id="you" placeholder="Enter message to send">
+            <button type="submit" onclick="insiderMessage()" class="submtBTN" id="insiderMes">
+                Send
+            </button>
+        </label>
+        <label for="imagePort" style="border: none;background-color: transparent;" class="labels">
+            <img src="assets/camera.png" alt="" class="sfx">
+            <img src="assets/notallowed.png" alt=" " id="imagePlayer2" >
+        </label>
+        <input type="file" id="imagePort" class="hiddenForms" accept=".png,.jpg,.jpeg,.gif,.webp,.svg,.bmp" onchange="appendPic2()">
+        <label for="audioPort" style="border: none; background-color: transparent;" class="labels">
+            <img src="assets/phone/whatsapp/micro.png" alt="" class="sfx">
+        </label>
+        <input type="file" id="audioPort" class="hiddenForms" accept=".mp3,.m4a,.aac" onchange="loadAudioFile(this)">
+    </form>
+    <form class="generalForm" method="dialog">
+        <label for="" style="max-height: 40px;font-size: 11px;flex-grow: 1;"><button style="border: none;flex-grow: 1;" onclick="insertTime2()">Insert Time Indicator</button>&nbsp;</label>
+        <label for="" style="max-height: 40px;font-size: 11px;flex-grow: 1;"><button style="border: none;" onclick="insertBlocked(this)" id="block">Insert Blocked</button>&nbsp;</label>
+        <label for="" style="max-height: 40px;font-size: 11px;flex-grow: 1;"><button style="border: none;" onclick="insertMissedVCall()">Insert Missed Voice Call</button></label>
+        <label for="" style="max-height: 40px;font-size: 11px;flex-grow: 1;"><button style="border: none;" onclick="insertMissedViCall()">Insert Missed Video Call</button></label>
+        <label for="" style="max-height: 40px;font-size: 11px;flex-grow: 1;"><h3 style="border: white solid 2px;border-radius: 50%;width: 30px;height: 30px;display: flex;align-items: center;justify-content: center; margin-right: 10px;">i</h3>All Info and Images are editable in the form &nbsp;&nbsp;</label>
+        <label for="" style="max-height: 40px;font-size: 11px;flex-grow: 1;"><h3 style="border: white solid 2px;border-radius: 50%;width: 30px;height: 30px;display: flex;align-items: center;justify-content: center; margin-right: 10px;">i</h3>Double Click On Any Message To Delete It &nbsp;&nbsp;</label>
+    </form>
+    <div style="opacity:0;position:absolute;z-index:-99999;"><input type="time" id="timerBox" value="${timer}"></div>
+    <img src="assets/phone/whatsapp/defaultprofile.png" style="opacity:0;position:absolute;z-index:-99999;" id="special">
+</div>
+</div>
+<div class="result">
+    <h2 class="display-title">
+        Results
+    </h2>
+    <div class="phone" id="phone">
+        <img src="assets/phone/whatsapp/whatsappwallpaper.jpg" alt="" id="BGImage">
+        <div class="phone-top-bar">
+            <img src="assets/phone/battery.png" alt="" style="width: 25px;margin-bottom: -5px;">
+            <p id="timeStart" contenteditable="true" spellcheck="false">9:41</p>
+            <img src="assets/phone/wifi.png" alt="" style="width: 18px;margin-bottom: -2px;margin-top: 19px;margin-right: 5px;">
+            <img src="assets/phone/signal.png" alt="" style="width: 18px;margin-top: 19px;margin-right: 5px;">
+            <div class="phone-notch"></div>
+        </div>
+        <div class="whatsapp-map" id="whatsapp-map">
+            <div class="whatsapp-header">
+                <img src="assets/phone/whatsapp/arrow.png" alt="" id="wArrow">
+                <input type="file" style="display: none;" id="pp-changer" accept=".jpg,.png,.jpeg,.gif,.webp" onchange="handleImageWhat()">
+                <label for="pp-changer"><img src="assets/phone/whatsapp/defaultprofile.png" alt="" id="dpp"></label>
+                <h5 id="hisName" class="hisName" contenteditable="true" spellcheck="false">Name</h5>
+                <img src="assets/phone/whatsapp/videocall.png" alt="" id="videoCall">
+                <img src="assets/phone/whatsapp/voice.png" alt="" id="voiceCall">
+                <img src="assets/phone/whatsapp/dots.png" alt="" id="dots3">
+            </div>
+        </div>
+        <div class="messanger">
+            <div class="message-border">
+                <div class="day" style="margin-bottom: 5px;">
+                    <p contenteditable="true" spellcheck="false" style="outline: none;">Today</p>
+                </div>
+            </div>
+            <div class="message-border" id="lastMessage" style="opacity: 0;">
+                <div class="in"></div>
+            </div>
+        </div>
+        <div class="message-input">
+            <div class="message-box">
+                <img src="assets/phone/whatsapp/imoji.png" alt="">
+                <form method="dialog" id="formOfInp"><input type="text" placeholder="Message" onkeyup="transMessage()" id="messager" autocomplete="off" spellcheck="false"></form>
+                <img src="assets/phone/whatsapp/attachment.png" alt="">
+                <label for="imagePort"><img src="assets/phone/whatsapp/camera2.png" alt="" style="width:25px;height: 25px;"></label>
+            </div>
+            <div class="audio" onclick="changeLogo()">
+                <img src="assets/phone/whatsapp/micro.png" alt="" id="microPic">
+            </div>
+        </div>
+        <div class="phone-bottom-bar">
+            <div class="black-bar"></div>
+        </div>
+    </div>
+    <div class="phone-content">
+        <div id="inserter" style="opacity: 0;position: absolute;z-index: -9999999;"></div>
+    </div>
+    <dialog open class="tips" id="tips">
+        <button id="closer" onclick="formatDialog()">X</button>
+        <p>This website is under continuos development ,which mean bugs might be found.
+            .Please keep the instruction in mind to avoid bugs.
+        </p>
+        <p>If you find any bugs contact us to fix it.</p>
+        <p>The website work with loads of javaScript code ,it might go slow if you are using a phone device</p>
+        <p>If you go back and forward in the info selector menu and change the basic info ,already sent messages will not get the changes</p>
+        <p>You can't delete a message once sent .We are working to enable this feature soon.</p>
+        <p>We always recommend taking a screenshot with your device.</p>
+    </dialog>
+</div>

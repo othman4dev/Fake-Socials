@@ -1,0 +1,113 @@
+<div class="instagram">
+  <div class="top-bar">
+    <p class="time" contenteditable="true">12:00 PM</p>
+    <div class="notch"></div>
+    <img src="../assets/phone/wifi.png" class="top-nav-icon" alt="" />
+    <img src="../assets/phone/signal.png" alt="" class="top-nav-icon" />
+    <img src="../assets/phone/battery.png" alt="" class="top-nav-icon" />
+  </div>
+  <div class="app-top-bar">
+    <img src="../assets/phone/whatsapp/arrow.png" alt="" class="arrow" />
+    <label for="profile-port"><div class="profile-pic"></div></label>
+    <div class="names">
+      <p class="name" contenteditable="true" onkeyup="matchNames(this)">
+        Name
+        <img
+          src="../assets/phone/instagram/verified.png"
+          id="verified2"
+          alt=""
+        />
+      </p>
+      <p class="userName" contenteditable="true" onkeyup="matchUserNames(this)">
+        Username
+      </p>
+    </div>
+    <div class="app-top-bar-icons">
+      <img
+        src="../assets/phone/instagram/instagramCall.png"
+        alt=""
+        class="app-top-bar-icon"
+      />
+      <img
+        src="../assets/phone/instagram/instaVideo.png"
+        alt=""
+        class="app-top-bar-icon"
+      />
+      <img
+        src="../assets/phone/instagram/label.png"
+        alt=""
+        class="app-top-bar-icon"
+      />
+    </div>
+  </div>
+  <div class="messanger" id="messanger">
+    <div class="profile-chat">
+      <label for="profile-port"><div class="profile-pic big"></div></label>
+      <p class="name" contenteditable="true" onkeyup="matchNames(this)">
+        Name
+        <img
+          src="../assets/phone/instagram/verified.png"
+          id="verified"
+          alt=""
+        />
+      </p>
+      <p class="instaName" contenteditable="true">
+        Instagram .
+        <span
+          class="userName"
+          style="color: white; font-size: medium"
+          contenteditable="true"
+          onkeyup="matchUserNames(this)"
+          >Username</span
+        >
+      </p>
+      <p class="profile-discription" contenteditable="true">
+        4.7K followers . 7 posts
+      </p>
+      <p class="profile-discription" contenteditable="true">
+        followed this Instagram account since 2023
+      </p>
+      <p class="profile-discription" contenteditable="true">
+        You both follow acccutienyla
+      </p>
+      <button class="view-profile">View Profile</button>
+    </div>
+  </div>
+  <div class="message-input">
+    <img
+      src="../assets/phone/instagram/insta-camera.svg"
+      alt=""
+      class="message-input-icons"
+    />
+    <input
+      type="text"
+      class="text-message-inp"
+      placeholder="Message..."
+      onkeyup="bottomInput(this)"
+    />
+    <img
+      src="../assets/phone/instagram/Send.svg"
+      alt=""
+      class="send"
+      onclick="transferFunction(this.previousElementSibling)"
+    />
+    <img
+      src="../assets/phone/instagram/instaMic.png"
+      alt=""
+      class="message-input-icons smaller"
+    />
+    <img
+      src="../assets/phone/instagram/image.png"
+      alt=""
+      class="message-input-icons smaller"
+    />
+    <img
+      src="../assets/phone/instagram/plus.png"
+      alt=""
+      class="message-input-icons smaller"
+    />
+  </div>
+  <div class="bottom-bar">
+    <div class="white-bar"></div>
+  </div>
+</div>

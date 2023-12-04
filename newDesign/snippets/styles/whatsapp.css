@@ -1,0 +1,479 @@
+.whatsapp {
+  border: solid #000 15px;
+  min-height: 844px;
+  min-width: 390px;
+  max-height: 844px !important ;
+  max-width: 390px;
+  margin: 25px;
+  border-radius: 35px;
+  background-image: url(../../assets/phone/whatsapp/whatsappwallpaper.svg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #273443;
+}
+.whatsapp .name {
+  white-space: nowrap;
+  max-height: 40px;
+  overflow: hidden;
+  max-width: 160px;
+  width: 160px;
+  text-align: left;
+  justify-content: flex-start;
+}
+.top-bar-w {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding-top: 12px;
+  background-color: #273443;
+  border-radius: 12pt 12pt 0 0;
+}
+.notch-whats {
+  border-radius: 15pt;
+  width: 170px;
+  height: 25px;
+  background-color: #000;
+  position: absolute;
+  top: 7px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.top-bar-icons {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-right: 10px;
+}
+.what {
+  background-color: #273443;
+}
+.-w-small {
+  width: 20px;
+}
+.messanger-w {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: scroll;
+  padding-bottom: 5px;
+  flex-grow: 1;
+}
+.messanger-w::-webkit-scrollbar {
+  width: 7px;
+}
+.messanger-w::-webkit-scrollbar-thumb {
+  background-color: #273443;
+  border-radius: 5pc;
+}
+.info {
+  background-color: #273443;
+  color: #e3b316;
+  max-width: 85%;
+  text-align: center;
+  border-radius: 9pt;
+  padding: 7px;
+  box-sizing: border-box;
+}
+.info-text {
+  font-size: 13px;
+}
+.block-i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+.lock {
+  width: 10px;
+  margin-inline: 5px;
+}
+.bottom-input-w {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  gap: 10px;
+  padding-inline: 5px;
+}
+.input-and-icons {
+  display: flex;
+  align-items: center;
+  background-color: #273443;
+  border-radius: 25px;
+  width: 85%;
+  gap: 10px;
+  justify-content: space-evenly;
+  height: 50px;
+  padding-inline: 7px;
+}
+.input-icon-w {
+  width: 27px;
+  cursor: pointer;
+}
+.bottom-input-w-inp {
+  background-color: transparent;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-family: viga;
+  font-size: 16px;
+  color: #8c9cb0;
+}
+.bottom-input-w-inp::placeholder {
+  color: #8c9cb0;
+}
+.mic-or-send {
+  background-color: #157c70;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.mic-or-send-icon {
+  width: 25px;
+}
+.msg-w {
+  background-color: #273443;
+  padding: 7px;
+  padding-inline: 15px;
+  min-width: 100px;
+  padding-bottom: 12px;
+  border-radius: 9pt;
+  position: relative;
+  max-width: 50%;
+}
+.msg-w-out {
+  background-color: #157c70;
+  min-width: 100px;
+  padding: 7px;
+  padding-inline: 15px;
+  padding-bottom: 12px;
+  border-radius: 9pt;
+  position: relative;
+  max-width: 50%;
+}
+.shape-w {
+  position: absolute;
+  background-color: #273443;
+  width: 20px;
+  height: 15px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 100%;
+  top: 0;
+  left: -7px;
+}
+.timer {
+  color: #8c9cb0;
+  font-size: 11px;
+  position: absolute;
+  bottom: 2px;
+  right: 7px;
+}
+.messanger-w {
+  gap: 5px;
+}
+.out {
+  background-color: #157c70;
+}
+.shape-w.out {
+  right: -7px !important;
+  left: unset;
+  border-radius: 0;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 100%;
+}
+.timer-read {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 2px;
+  right: 5px;
+  gap: 5px;
+}
+.timer-out {
+  font-size: 11px;
+  color: #fff;
+  opacity: 0.4;
+}
+.read {
+  width: 17px;
+  height: 20px;
+}
+.img-out-w {
+  background-color: #157c70;
+  position: relative;
+  border-radius: 12pt;
+  max-width: 60%;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-in-w {
+  background-color: #273443;
+  position: relative;
+  border-radius: 12pt;
+  max-width: 60%;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img-img {
+  width: 100%;
+  z-index: 1;
+  border-radius: 9pt;
+}
+.img-time {
+  color: #8c9cb0;
+  z-index: 2;
+  right: 10px;
+  bottom: 7px;
+}
+.audio-in-w {
+  background-color: #273443;
+  display: flex;
+  border-radius: 9pt;
+  align-items: center;
+  max-width: 80%;
+  position: relative;
+  height: 65px;
+  padding-inline: 8px;
+  padding-bottom: 5px;
+  box-sizing: border-box;
+  gap: 5px;
+}
+.play-w {
+  width: 25px;
+  opacity: 0.7;
+}
+.wave {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.waveimg {
+  width: 90%;
+  opacity: 0.7;
+  z-index: 0;
+}
+.blue-c {
+  width: 15px;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translate(-50%, -50%);
+  opacity: 2;
+  z-index: 1;
+}
+.timer-duration {
+  position: absolute;
+  bottom: 4px;
+  right: 70px;
+  display: flex;
+  align-items: center;
+  gap: 120px;
+  color: #fff;
+  opacity: 0.7;
+  font-size: 11px;
+}
+.waver {
+  position: absolute;
+  height: 100%;
+  width: 97.5%;
+  background-color: #273443;
+  top: 0;
+  right: 0;
+  animation-fill-mode: backwards;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  z-index: 2;
+  opacity: 0.7;
+}
+@keyframes smallerGo {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+.moved-mic {
+  width: 10px;
+  position: absolute;
+  bottom: 0px;
+  left: -2px;
+}
+.profile-pic {
+  position: relative;
+}
+.audio-out-w {
+  background-color: #157c70;
+  display: flex;
+  border-radius: 9pt;
+  align-items: center;
+  max-width: 80%;
+  position: relative;
+  height: 65px;
+  padding-inline: 8px;
+  padding-bottom: 5px;
+  box-sizing: border-box;
+  gap: 5px;
+}
+.moved-mic-reverse {
+  width: 10px;
+  position: absolute;
+  bottom: 0px;
+  right: -2px;
+}
+.waver-out {
+  position: absolute;
+  height: 100%;
+  width: 97.5%;
+  background-color: #157c70;
+  top: 0;
+  right: 0;
+  animation-fill-mode: backwards;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+  z-index: 2;
+  opacity: 0.7;
+}
+.timer-duration-out {
+  position: absolute;
+  bottom: 4px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #fff;
+  opacity: 0.7;
+  font-size: 11px;
+}
+.duration-w-out {
+  margin-right: 120px;
+}
+.phone-bottom-bar {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+  border-radius: 0 0 15pt 15pt;
+  margin-top: 7px;
+}
+.black-bar {
+  height: 15px;
+  border-radius: 15px;
+  width: 50%;
+  background-color: #000;
+}
+.time-indicator-w {
+  background-color: #273443;
+  border-radius: 5px;
+  padding: 5px;
+  padding-inline: 10px;
+  color: #8c9cb0;
+  font-size: 14px;
+}
+.missed-video-call-in {
+  background-color: #273443;
+  width: 200px;
+  height: 80px;
+  border-radius: 9pt;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+}
+.inner-call {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #00000023;
+  width: 100%;
+  height: 100%;
+  border-radius: 9pt;
+  z-index: 2;
+}
+.img-circle {
+  background-color: #273443;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+.call-symbol {
+  width: 25px;
+}
+.darker {
+  font-size: 12px;
+  opacity: 0.7;
+}
+.missed-video-call-out {
+  background-color: #157c70;
+  width: 200px;
+  height: 80px;
+  border-radius: 9pt;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+}
+.img-circle-out {
+  background-color: #157c70;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+@media print {
+  .whatsapp {
+    position: absolute;
+    transform: translate(-50%);
+    top: 0%;
+    left: 50%;
+    margin-top: 0;
+    min-width: 390px;
+    overflow: hidden;
+  }
+  .instagram {
+    position: absolute;
+    transform: translate(-50%);
+    top: 0%;
+    left: 50%;
+    margin-top: 0;
+    min-width: 390px;
+    overflow: hidden;
+  }
+  .optional-options {
+    display: none;
+  }
+  header {
+    display: none !important ;
+  }
+  footer {
+    display: none;
+  }
+  .empty-container {
+    display: none;
+  }
+}

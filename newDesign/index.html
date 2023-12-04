@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Viga' rel='stylesheet'>
+    <link rel="shortcut icon" href="assets/LOGO2.svg" type="image/x-icon">
+    <script src="script.js"></script>
+    <script>
+        window.onload = () => { if (document.getElementById('agree').checked) {
+            document.getElementById('agree').checked = false;
+            console.log('test');
+        } 
+    } 
+    </script>
+    <title>Welcome to Fake-socials</title>
+</head>
+<body>
+    <header class="index-header">
+        <h4>CREATE CUSTOM CONVOS WITH ANYONE YOU WANT !</h4>
+        <div class="big-text-container" style="background-color: white;">
+            <img src="assets/LOGO.svg" alt="" width="200px">
+            <h1>Fake-Socials</h1>
+        </div>
+        <div class="socials-pop">
+            <img src="assets/socials/facebook.svg" alt="" class="socials-index" id="social-1">
+            <img src="assets/socials/instagram.svg" alt="" class="socials-index" id="social-2">
+            <img src="assets/socials/tiktok.svg" alt="" class="socials-index" id="social-3">
+            <img src="assets/socials/twitter.svg" alt="" class="socials-index" id="social-4">
+            <img src="assets/socials/whatsapp.svg" alt="" class="socials-index" id="social-5">
+            <img src="assets/socials/facebook.svg" alt="" class="socials-index" id="social-6">
+            <img src="assets/socials/instagram.svg" alt="" class="socials-index" id="social-7">
+            <img src="assets/socials/tiktok.svg" alt="" class="socials-index" id="social-8">
+            <img src="assets/socials/twitter.svg" alt="" class="socials-index" id="social-9">
+            <img src="assets/socials/whatsapp.svg" alt="" class="socials-index" id="social-10">
+            <img src="assets/socials/facebook.svg" alt="" class="socials-index" id="social-11">
+            <img src="assets/socials/instagram.svg" alt="" class="socials-index" id="social-12">
+            <img src="assets/socials/tiktok.svg" alt="" class="socials-index" id="social-13">
+            <img src="assets/socials/twitter.svg" alt="" class="socials-index" id="social-14">
+            <img src="assets/socials/whatsapp.svg" alt="" class="socials-index" id="social-15">
+            <img src="assets/socials/facebook.svg" alt="" class="socials-index" id="social-16">
+        </div>
+    </header>
+    <main class="index-main">
+        <div class="terms-wrapper">
+            <input type="checkbox" onchange="makeAble(this)" id="agree">
+            <label for="agree"> I have read and agreed to the <strong>Terms and conditions of use</strong>.</label>
+        </div>
+        <button id="start" class="start" disabled onclick="goto('pages/choose')">Get started</button>
+    </main>
+    <footer>
+        <h1>Fake-Socials</h3>
+        <p style="text-indent: 50px;">All rights reserved.</p>
+        <p>Powered by Othman Kharbouch</p>
+    </footer>
+</body>
+</html>

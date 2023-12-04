@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/loading.css">
+    <link rel="shortcut icon" href="../assets/LOGO2.svg" type="image/x-icon">
+    <script src="scripts/modules.js"></script>
+    <script src="scripts/choose.js" defer></script>
+    <title>Choose a plateform</title>
+</head>
+<body>
+    <header class="choose-header">
+        <h1>Fake socials</h1>
+        <img src="assets/menu2.svg" alt="" class="menu-round">
+    </header>
+    <main>
+        <h1 class="main-choose">Choose a plateform :</h1>
+        <div class="platforms">
+            <div class="platform-circle" id="whatsapp" draggable="true"><img class="social-img" draggable="false" src="../assets/socials/whatsapp.svg" alt="" onclick="showPoly(this)"><img src="../assets/Polygon.svg" class="poly" alt=""></div>
+            <div class="platform-circle" id="instagram" draggable="true"><img class="social-img" draggable="false" src="../assets/socials/instagram.svg" alt="" onclick="showPoly(this)"><img src="../assets/Polygon.svg" class="poly" alt=""></div>
+            <div class="platform-circle" id="facebook" draggable="true"><img class="social-img" draggable="false" src="../assets/socials/facebook.svg" alt="" onclick="showPoly(this)"><img src="../assets/Polygon.svg" class="poly" alt=""></div>
+            <div class="platform-circle" id="tiktok" draggable="true"><img class="social-img" draggable="false" src="../assets/socials/tiktok.svg" alt="" onclick="showPoly(this)"><img src="../assets/Polygon.svg" class="poly" alt=""></div>
+            <div class="platform-circle" id="twitter" draggable="true"><img class="social-img" draggable="false" src="../assets/socials/twitter.svg" alt="" onclick="showPoly(this)"><img src="../assets/Polygon.svg" class="poly" alt=""></div>
+        </div>
+        <div class="default-choice" id="temp">
+                <h1 class="drag-drop">Choose a platform or drag & drop it.</h1>
+        </div>
+        <div class="empty-container">
+            <img class="img-link" src="../assets/howToUse.svg" alt="">
+            <img class="img-link" src="../assets/contact1.svg" alt="">
+            <img class="img-link" src="../assets/support.svg" alt="">
+            <img class="img-link" src="../assets/report.svg" alt="">
+            <img class="img-link" src="../assets/developer.svg" alt="">
+        </div>
+    </main>
+    <footer>
+        <h1>Fake-Socials</h3>
+        <p style="text-indent: 50px;">All rights reserved.</p>
+        <p>Powered by Othman Kharbouch</p>
+    </footer>
+</body>
+<div class="body" id="loading-body">
+    <div class="groupe">
+        <div class="couple">
+            <div class="single" id="one"></div>
+            <div class="single" id="two"></div>
+        </div>
+        <div class="couple">
+            <div class="single" id="three"></div>
+            <div class="single" id="four"></div>
+        </div>
+    </div>
+</div>
+</html>

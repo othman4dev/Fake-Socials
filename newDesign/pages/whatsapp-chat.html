@@ -1,0 +1,93 @@
+<div class="whatsapp">
+  <div class="top-bar-w">
+    <p class="time" contenteditable="true">12:00 PM</p>
+    <div class="notch-whats"></div>
+    <divv class="top-bar-icons">
+      <img src="../assets/phone/wifi.png" class="top-nav-icon" alt="" />
+      <img src="../assets/phone/signal.png" alt="" class="top-nav-icon" />
+      <img src="../assets/phone/battery.png" alt="" class="top-nav-icon" />
+    </divv>
+  </div>
+  <div class="app-top-bar what">
+    <img src="../assets/phone/whatsapp/arrow.png" alt="" class="arrow" />
+    <label for="profile-port"><div class="profile-pic"></div></label>
+    <div class="names">
+      <p class="name" contenteditable="true" onkeyup="matchNames(this)">
+        Name
+        <img
+          src="../assets/phone/instagram/verified.png"
+          id="verified2"
+          alt=""
+        />
+      </p>
+    </div>
+    <div class="app-top-bar-icons">
+      <img
+        src="../assets/phone/whatsapp/voice.png"
+        alt=""
+        class="app-top-bar-icon"
+      />
+      <img
+        src="../assets/phone/whatsapp/videocall.png"
+        alt=""
+        class="app-top-bar-icon"
+      />
+      <img
+        src="../assets/phone/whatsapp/dots.png"
+        alt=""
+        class="app-top-bar-icon -w-small"
+      />
+    </div>
+  </div>
+  <div class="messanger-w" id="messanger">
+    <div class="block-i">
+      <div class="info">
+        <p class="info-text">
+          <img
+            src="../assets/phone/whatsapp/lock.svg"
+            class="lock"
+            alt=""
+          />Messages and calls are end-to-end encrypted. No one outside of this
+          chat,not even Whatsapp, can read or listento them. Tap to learn more
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="bottom-input-w">
+    <div class="input-and-icons">
+      <img
+        src="../assets/phone/whatsapp/emogies.svg"
+        class="input-icon-w"
+        alt=""
+      />
+      <input
+        type="text"
+        class="bottom-input-w-inp"
+        placeholder="Message"
+        onkeyup="bottomInput(this)"
+      />
+      <img
+        src="../assets/phone/whatsapp/attachement.svg"
+        class="input-icon-w"
+        alt=""
+      />
+      <img
+        src="../assets/phone/whatsapp/camera2.svg"
+        class="input-icon-w"
+        alt=""
+      />
+    </div>
+    <div class="mic-or-send">
+      <img
+        src="../assets/phone/whatsapp/micro.png"
+        class="mic-or-send-icon"
+        alt=""
+        id="mic-send"
+        onclick="transferFunction(document.querySelectorAll('.bottom-input-w-inp')[0])"
+      />
+    </div>
+  </div>
+  <div class="phone-bottom-bar">
+    <div class="black-bar"></div>
+  </div>
+</div>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/plateforms.js"></script>
+    <script src="scripts/tools.js"></script>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../snippets/styles/instagram.css">
+    <link rel="stylesheet" href="../snippets/styles/whatsapp.css">
+    <link rel="stylesheet" href="../styles/loading.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="shortcut icon" href="assets/LOGO2.svg" type="image/x-icon">
+    <title id="title">Enjoy !!!</title>
+</head>
+<body spellcheck="false">
+    <header class="choose-header">
+        <h1>Fake socials</h1>
+        <img src="../assets/menu2.svg" alt="" class="menu-round">
+    </header>
+    <section class="top-addition">
+        <h1 class="bigger-platform">Instagram</h1>
+        <div class="circles">
+            <div class="circle1" id="tiktok-circle"><img src="../assets/socials/tiktok.svg" alt=""></div>
+            <div class="circle2" id="facebook-circle"><img src="../assets/socials/facebook.svg" alt=""></div>
+            <div class="circle3" id="instagram-circle"><img src="../assets/socials/instagram.svg" alt=""></div>
+            <div class="circle4" id="whatsapp-circle"><img src="../assets/socials/whatsapp.svg" alt=""></div>
+            <div class="circle5" id="twitter-circle"><img src="../assets/socials/twitter.svg" alt=""></div>
+        </div>
+    </section>
+    <main class="platform-main">
+        <span id="inserter" style="display: none;"></span>
+        <dialog id="erase-dialog">
+            <div class="white-box">
+                <img src="../assets/ex.svg" alt="" class="ex" onclick="cancelIt(this)">
+                <p>Attention</p>
+                <p>You are about to erase all your progress !</p>
+                <div class="choice-wrapper">
+                    <button class="choices" onclick="eraseIt()">Erase</button>
+                    <button class="choices" onclick="cancelIt(this)">Cancel</button>
+                </div>
+            </div>
+        </dialog>
+    </main>
+    <section class="ready-chat">
+        <div class="ready-h1">
+            <h1>Ready to chat</h1>
+        </div>
+        <div class="personals">
+            <div class="person">
+                <div class="personal-img"></div>
+                <p class="personal-name">Cristiano Ronaldo</p>
+            </div>
+            <div class="person">
+                <div class="personal-img"></div>
+                <p class="personal-name">Lionel Messi</p>
+            </div>
+            <div class="person">
+                <div class="personal-img"></div>
+                <p class="personal-name">Bilie Elish</p>
+            </div>
+            <div class="person">
+                <div class="personal-img"></div>
+                <p class="personal-name">Eminem</p>
+            </div>
+            <div class="person">
+                <div class="personal-img"></div>
+                <p class="personal-name">Mr Beast</p>
+            </div>
+            <div class="person">
+                <div class="personal-img"></div>
+                <p class="personal-name">Andrew Tate</p>
+            </div>
+            <div class="person">
+                <div class="personal-img"></div>
+                <p class="personal-name">Nicki Minaj</p>
+            </div>
+            <div class="person">
+                <div class="personal-img"></div>
+                <p class="personal-name">Pew Die Pie</p>
+            </div>
+            <div class="person">
+                <div class="personal-img"></div>
+                <p class="personal-name">Queen Elizabeth</p>
+            </div>
+            <div class="person">
+                <div class="personal-img"></div>
+                <p class="personal-name">Tom Cruise</p>
+            </div>
+            <div class="person">
+                <div class="personal-img"></div>
+                <p class="personal-name">Joe Bidden</p>
+            </div>
+            <div class="person">
+                <div class="personal-img"></div>
+                <p class="personal-name">Vladmir Puten</p>
+            </div>
+            <div class="person">
+                <div class="personal-img"></div>
+                <p class="personal-name">Donald Trump</p>
+            </div>
+        </div>
+    </section>
+    <div class="empty-container">
+        <img class="img-link" src="../assets/howToUse.svg" alt="">
+        <img class="img-link" src="../assets/contact1.svg" alt="">
+        <img class="img-link" src="../assets/support.svg" alt="">
+        <img class="img-link" src="../assets/report.svg" alt="">
+        <img class="img-link" src="../assets/developer.svg" alt="">
+    </div>
+    <footer>
+        <h1>Fake-Socials</h3>
+        <p style="text-indent: 50px;">All rights reserved.</p>
+        <p>Powered by Othman Kharbouch</p>
+    </footer>
+    <del id="localData" style="display: none;">
+        <input type="file" accept=".png,.jpg,.jpeg,.gif,.webp,.svg,.bmp" id="profile-port" onchange="handleProfile(this)">
+    </del>
+</body>
+<div class="body" id="loading-body">
+    <div class="groupe">
+        <div class="couple">
+            <div class="single" id="one"></div>
+            <div class="single" id="two"></div>
+        </div>
+        <div class="couple">
+            <div class="single" id="three"></div>
+            <div class="single" id="four"></div>
+        </div>
+    </div>
+</div>
+<div class="fullScreener" id="template">
+
+</div>
+</html>
+<!--Scripts for platforms-->
+<script src="scripts/plateformUNI.js" defer></script>
+<script src="
+https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js
+"></script>

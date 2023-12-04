@@ -1,0 +1,67 @@
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgba(255, 255, 255, 0.644);
+    display: none;
+}
+.groupe {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: turnGroup;
+}
+.couple {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: turnSingle;
+}
+.single {
+    border-radius: 50%;
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+}
+#one {
+    background-color: #7820EB;
+}
+#two {
+    background-color: #4200FF;
+}
+#three {
+    background-color: #FE7478;
+}
+#four {
+    background-color: #CE86F1;
+}
+@keyframes turnSingle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+@keyframes turnGroup {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

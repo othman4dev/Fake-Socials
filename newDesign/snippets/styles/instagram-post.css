@@ -1,0 +1,147 @@
+.two-imgs {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+    gap: 15px;
+}
+.app-top-bar {
+    justify-content: space-between;
+}
+.stories {
+    display: flex;
+    height: 130px;
+    width: 100%;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    box-sizing: border-box;
+    padding-inline: 15px;
+    margin-top: 15px;
+}
+.stories::-webkit-scrollbar {
+    border-radius: 25px;
+    height: 15px;
+}
+.stories::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+
+.story1 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 85px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 14px;
+}
+.st {
+    width: 80px;
+    height: 80px;
+}
+.updated {
+    box-shadow: #000 0 0 0 1px,#ff8000 0 -3px 0 1px, #ff008c 0 3px 0 1px, rgb(210, 23, 76) 0 0 0 4px;
+}
+.poster {
+    flex-grow: 1;
+}
+.all-poster {
+    overflow-y: scroll;
+}
+.all-poster::-webkit-scrollbar {
+    border-radius: 25px;
+    width: 0px;
+}
+.all-poster::-webkit-scrollbar-thumb {
+    background-color: #555;
+}
+.dots-post {
+    width: 15px;
+}
+.post-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 15px;
+}
+.name-profile {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+.post-img {
+    background-size: cover;
+    background-position: center;
+    width: 98%;
+    background-color: #222;
+    height: fit-content;
+    min-height: 450px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.post-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 100%;
+}
+.first-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+.post-sous-text {
+    width: 100%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.add-comment {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.post-more {
+    font-size: 12px;
+    color: #666666;
+}
+.post-desc {
+    display: flex;
+    align-items: last baseline;
+}
+.cursive-logo {
+    width: 120px;
+}
+.post-caret {
+    width: 8px;
+    rotate: -90deg;
+}
+.post-icon {
+    width: 25px;
+}
+.rot-20 {
+    transform: rotate(20deg);
+}
+.right-bottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 25px;
+}
+.small-icon {
+    width: 20px;
+}
+.plus-verified {
+    width: 15px;
+}
+.save {
+    width: 18px;
+    margin-right: 10px;
+}

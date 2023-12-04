@@ -1,0 +1,124 @@
+.whatsapp-name {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+  }
+  .down-top-bar {
+    height: 45px;
+    width: 100%;
+    background-color: #273443;
+    display: flex;
+    align-items: center;
+  }
+  .down-top-choices {
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    opacity: 0.8;
+    height: 100%;
+    flex-grow: 1;
+    box-sizing: border-box;
+    height: 45px;
+  }
+  .what-groups {
+    width: 25px;
+    height: 25px;
+    opacity: 0.5;
+  }
+  .choosen {
+    font-size: 17px;
+    border-bottom: solid #157c70 3px;
+    color: #157c70;
+  }
+  .whatsapp {
+    background-image: none;
+    background-color: #182029;
+  }
+  .profile {
+    width: 50px;
+    height: 50px;
+    background-color: grey;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../../assets/phone/whatsapp/default.svg');
+  }
+  .contact {
+    display: flex;
+    align-items: center;
+    margin: 7px;
+    gap: 8px;
+  }
+  .last-message {
+    font-size: 11px;
+    opacity: 0.8;
+  }
+  .time-contact {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+    margin-top: -15px;
+  }
+  .time-text {
+    width: fit-content;
+    font-size: 11px;
+    opacity: 0.8;
+  }
+  .block-full {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+  }
+  .contact {
+    width: 100%;
+  }
+  .contact-name {
+    font-size: 17px;
+    width: fit-content;
+    white-space: nowrap;
+  }
+  .fixed-mark {
+    position: absolute;
+    bottom: 35px;
+    right: 15px;
+    background-color: #157c70;
+    height: 60px;
+    width: 60px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .unread {
+    background-color: #157c70;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+  }
+  .unreaded {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    height: fit-content;
+    align-items: flex-end;
+
+  }
+  .seen {
+    width: 15px;
+    height: 9px;
+    margin: 0;
+    margin-right: 5px;
+  }

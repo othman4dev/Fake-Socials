@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "sortablejs": "^1.15.0"
+    "draggablejs": "^1.0.0"
   }
 }
